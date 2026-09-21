@@ -1,0 +1,1 @@
+import{expect,it}from'vitest';import{decodeTlv}from'../src/index.js';it('decodes',()=>expect(decodeTlv(Uint8Array.from([2,1,5])).value[0]).toBe(5));
